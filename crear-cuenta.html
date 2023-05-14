@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --very-light-pink: #C7C7C7;
+            --text-imput-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+
+            --secondary-font: 'Roboto', sans-serif;
+
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+        html {
+            font-size: 62.5%;
+            font-family: 'Quicksand', sans-serif;
+        }
+        body {
+            margin: 0px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+            /* Orden de estilos según su propósito:
+
+            1. Posicionamiento
+            2. Box Model
+            3. Tipografía
+            4. Visuales
+            5. Otros
+
+            cada categoría se separa con un espacio */
+/*         nav {
+            display: flex;
+            position: fixed;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 45px;
+
+            box-shadow: 0px 2px 4px 0px #0000000C;
+
+        }
+        nav a {
+            text-decoration: none;
+        }
+        .icon-ref {
+            margin: 13px;
+            width: 25px;
+            
+        } */
+        .login {
+            place-items: center;
+
+            display: grid;
+            width: 100%;
+            height: 100vh;
+        }
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+
+            width: 300px;
+        }
+        .second-title {
+            /* margin-top: 80px; */
+            margin-top: 20px;
+            margin-bottom: 40px;
+
+            font-size: var(--lg);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form div {
+            display: flex;
+            flex-direction: column;
+        }
+        .label {
+            font-size: var(--sm);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .input {
+            height: 32px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 10px;
+            padding: 6px;
+
+            font-size: var(--md);
+
+            background: var(--text-imput-field);
+            color: var(--text-imput-field);
+        }
+        .input::placeholder {
+            color: var(--very-light-pink);
+        }
+        .secondary-button {
+            width: 300px;
+            height: 59px;
+            border-radius: 10px;
+
+            margin-top: 30px;
+            margin-bottom: 26px;
+
+            font-weight: 700;
+            font-size: var(--md);
+        }
+        .create-button {
+            color: var(--white);
+            background: var(--hospital-green);
+            border: none;
+        }
+
+        @media (max-width: 640px) {
+/*             .options, .sign-in {
+                display: none;
+            } */
+            .form-container {
+                height: 100%;
+            }
+            .form {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--     <nav>
+        <a href="" class="icon-ref">
+            <img src="./icons/icon_menu.svg" alt="Menu">
+        </a>
+        <a href="" class="icon-ref">
+            <img src="./logos/logo_yard_sale.svg" alt="Logo">
+        </a>
+        <div>
+            <a href="" class="options">All</a>
+            <a href="" class="options">Clothes</a>
+            <a href="" class="options">Electronics</a>
+            <a href="" class="options">Furniture</a>
+            <a href="" class="options">Toys</a>
+            <a href="" class="options">Others</a>
+        </div>
+        <a href="" class="sign-in">Sign in</a>
+        <a href="" class="icon-ref">
+            <img src="./icons/icon_shopping_cart.svg" alt="Carrito">
+        </a>
+    </nav> -->
+    <div class="login">
+        <div class="form-container">
+
+            <h1 class="second-title">My Account</h1>
+        
+            <form action="/" class="form">
+                <div>
+                    <label for="name" class="label">Name</label>
+                    <input type="text" class="input input-name" id="name" placeholder="Camila Yokoo">
+            
+                    <label for="email" class="label">Email Addres</label>
+                    <input type="text" class="input input-email" id="email" placeholder="camilayokoo@gmail.com">
+            
+                    <label for="password" class="label">Password</label>
+                    <input type="password" class="input input-password" id="name" placeholder="**********">
+                    
+                </div>
+                <button class="secondary-button create-button">Create</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
