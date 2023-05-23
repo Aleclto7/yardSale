@@ -53,11 +53,7 @@
             width: 100%;
             height: 75px;
             padding: 0px 20px;
-            margin-bottom: 20px;
             box-sizing: border-box;
-
-            background: var(--text-imput-field);
-            border-radius: 20px;
         }
         .info-date {
             margin-bottom: 2px;
@@ -77,84 +73,64 @@
             font-weight: 400;
             color: var(--very-light-pink);
         }
-        .article, .article div {
+        .info-container div:nth-child(2) {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-        }
-        .article-container {
-            flex-direction: column;
-
-            width: 100%;
-        }
-        .article {
-            width: 100%;
-            height: 75px;
-
-            margin-bottom: 30px;
-        }
-        .article figure {
-            width: 80px;
-            padding: 0px;
-            margin: 0px;
-            margin-right: 20px;
-        }
-        img {
-            width: 95%;
-            height: 76px;
-            object-fit: cover;
-            
-            border-radius: 20px;
+            gap: 20px;
         }
     </style>
 </head>
 <body>
     <div class="order-menu">
-        <h1 class="title">My order</h1>
+        <h1 class="title">My orders</h1>
         <div class="info-container">
             <div>
                 <p class="date info-date">04.25.2021</p>
                 <p class="subtitle info-number">6 article</p>
             </div>
-            <p class="number">560,s00</p>
+            <div>
+                <p class="number">560,00</p>
+                <img src="./icons/flechita.svg" alt="" class="icon">
+            </div>
         </div>
-        
-        <div class="article-container">
-            <div class="article">
-                <div>
-                    <figure>
-                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </figure>
-                    <p class="subtitle">Bike</p>
-                </div>
-                <p class="number">120.00</p>
+        <div class="info-container">
+            <div>
+                <p class="date info-date">04.25.2021</p>
+                <p class="subtitle info-number">6 article</p>
             </div>
-            <div class="article">
-                <div>
-                    <figure>
-                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </figure>
-                    <p class="subtitle">Bike</p>
-                </div>
-                <p class="number">120.00</p>
+            <div>
+                <p class="number">560,00</p>
+                <img src="./icons/flechita.svg" alt="" class="icon">
             </div>
-            <div class="article">
-                <div>
-                    <figure>
-                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </figure>
-                    <p class="subtitle">Bike</p>
-                </div>
-                <p class="number">120.00</p>
+        </div>
+        <div class="info-container">
+            <div>
+                <p class="date info-date">04.25.2021</p>
+                <p class="subtitle info-number">6 article</p>
             </div>
-            <div class="article">
-                <div>
-                    <figure>
-                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                    </figure>
-                    <p class="subtitle">Bike</p>
-                </div>
-                <p class="number">120.00</p>
+            <div>
+                <p class="number">560,00</p>
+                <img src="./icons/flechita.svg" alt="" class="icon">
+            </div>
+        </div>
+        <div class="info-container">
+            <div>
+                <p class="date info-date">04.25.2021</p>
+                <p class="subtitle info-number">6 article</p>
+            </div>
+            <div>
+                <p class="number">560,00</p>
+                <img src="./icons/flechita.svg" alt="" class="icon">
+            </div>
+        </div>
+        <div class="info-container">
+            <div>
+                <p class="date info-date">04.25.2021</p>
+                <p class="subtitle info-number">6 article</p>
+            </div>
+            <div>
+                <p class="number">560,00</p>
+                <img src="./icons/flechita.svg" alt="" class="icon">
             </div>
         </div>
     </div>
