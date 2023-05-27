@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --very-light-pink: #C7C7C7;
+            --text-imput-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+
+            --secondary-font: 'Roboto', sans-serif;
+
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+        html {
+            font-size: 62.5%;
+            font-family: 'Quicksand', sans-serif;
+        }
+        body {
+            margin: 0px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            /* Orden de estilos según su propósito:
+
+            1. Posicionamiento
+            2. Box Model
+            3. Tipografía
+            4. Visuales
+            5. Otros
+            
+            cada categoría se separa con un espacio */
+        .product-details {
+            width: 360px;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+
+        }
+        aside {
+            position: relative;
+            width: 100%;    
+            height: auto;
+        }
+        .close-container {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+
+            background: var(--white);
+            border-radius: 20px;
+        }
+        .close-container img:nth-child(1) {
+            width: 100%;
+            cursor: pointer;
+        }
+        aside img:nth-child(2) {
+            width: 100%;
+            height: 360px;
+
+            border-radius: 0px 0px 20px 20px;
+            object-fit: cover;
+        }
+        .moving-container {
+            display: flex;
+            width: 30px;
+            height: 5px;
+            margin: auto;
+            margin-top: 15px;
+            gap: 5px;
+        }
+        .moving-container .point {
+            width: 5px;
+            
+            border-radius: 10px;
+            background: black;
+
+        }
+        .description-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin: 20px 20px 0px 20px;
+        }
+        .number {
+            font-size: var(--md);
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: var(--sm);
+            font-weight: 400;
+            color: var(--very-light-pink);
+            margin-bottom: 35px;
+        }
+        .secondary-button {
+            width: 300px;
+            height: 59px;
+            border-radius: 10px;
+
+            font-weight: 700;
+            font-size: var(--md);
+            text-align: center;
+        }
+        .add-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--white);
+            background: var(--hospital-green);
+            border: none;
+        }
+
+        @media (max-width: 640px) {
+            .product-details {
+                width: 100%;
+            }
+            .subtitle {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <aside>
+            <div class="close-container">
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+            <div class="moving-container">
+                <span class="point"></span>
+                <span class="point"></span>
+                <span class="point"></span>
+            </div>
+        </aside>
+        <div class="description-container">
+            <div> 
+                <p class="number">$ 120,00</p>
+                <p class="subtitle">Retro Bike</p>
+                <p class="subtitle description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in nemo dolor perferendis nisi nesciunt suscipit architecto natus consequatur maxime placeat officiis pariatur, molestiae qui earum harum nihil nam mollitia.
+                </p>
+            </div>
+            <button class="secondary-button add-button">
+                <img src="./icons/bt_add_to_cart.svg" alt="icon button">
+                Add to cart
+            </button>
+        </div>
+    </div>
+</body>
+</html>
